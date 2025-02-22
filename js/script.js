@@ -73,7 +73,7 @@ const playMusic=(track,pause=false)=>{
     document.querySelector(".songtime").innerHTML="00:00 / 00:00"
 }
 async function displayAlbums(){
-    let a = await fetch(`spotify/songs/`)
+    let a = await fetch(`/songs/`)
     let responce=await a.text();
     // console.log(responce);
     let div = document.createElement("div");
